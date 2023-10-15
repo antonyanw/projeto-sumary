@@ -117,13 +117,11 @@ div#data {
     margin-top: -241px;
     margin-left: 100px;
 }
-
-.tsnd {
-    display: flex;
-    padding-left: 100px;
-    text-align: justify;
-
+section#nms > p#rec {
+    display: inline-block
+    justify-content: space-around;
 }
+
 
 div.attribution {
    margin-top: 250px;
