@@ -1,5 +1,134 @@
 @charset "UTF-8";
 
-:root {
-    #F5DE8E
+@font-face {
+    font-family: 'Hanken';
+    src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format(truetype);
 }
+
+:root {
+    --corPri:#5E3FFC;
+    --corPri2:#6854ff;
+    --corCir1:#5B3DFB;
+    --corCir2:#4C24CD;
+    --corRec:#FF8086;
+    --corMem:#F7BA4B;
+    --corVer:#6BBCAD;
+    --corVis:#3945A4;
+    --corCon:#303B59;
+}
+
+/* <style>
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+</style> */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Hanken', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+main {
+    text-align: center;
+    margin: auto;
+    width: 350px;
+    height: 300px;
+}
+
+#blue {
+    text-align: center;
+    margin: auto;
+    width: 350px;
+    height: 300px;
+    background-image: linear-gradient(to top, var(--corPri), #4F37F5);
+    color: white;
+    border-radius: 0px 0px 30px 30px;
+}
+
+section#blue > h1#yr {
+    color: rgba(255, 255, 255, 0.623);
+    font: bolder 1em 'Hanken', Arial, Helvetica;
+    padding: 20px 0;
+}
+
+section#blue > p > span#one {
+    color: rgba(255, 255, 255, 0.350);
+}
+
+section#blue > p > span#bignumber {
+    display: block;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+p#circle {
+    border: none;
+    background-image: linear-gradient(to bottom, var(--corCir2), var(--corCir1));
+    width: 117px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+#gt {
+    padding: 10px 0px 3px 0px;
+}
+
+#txt {
+    color: rgba(255, 255, 255, 0.623);
+    display: block;
+    width: 260px;
+    margin: 3px auto 10px;
+    font-size: 14px;
+}
+
+section#summary {
+    border: solid black 1px;
+}
+
+section#summary h2 {
+    text-align: left;
+    text-indent: 30px;
+    padding: 20px 0;
+    font: bolder 1em 'Hanken', Arial, Helvetica;
+}
+
+div#data {
+    display: flex;
+    height: 300px;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-indent: 45px;
+    border: 1px black solid;
+}
+
+#nms {
+    display: flex;
+    flex-flow: column;
+    gap: 50px;
+}
+
+#tsnd {
+    display: flex;
+    flex-flow: column;
+    gap: 50px;
+    margin-top: -241px;
+    margin-left: 100px;
+}
+
+.tsnd {
+    display: flex;
+    padding-left: 100px;
+    text-align: justify;
+
+}
+
+div.attribution {
+   margin-top: 250px;
+}
+
+/* footer::after{
+    content: ;
+} */
