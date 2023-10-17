@@ -29,17 +29,30 @@
     box-sizing: border-box;
 }
 
-main {
-    text-align: center;
-    margin: auto;
-    width: 350px;
-    height: 300px;
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+main {
+    width: 350px;
+    background-color: red;
+}
+
+.luan {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 #blue {
     text-align: center;
     margin: auto;
-    width: 350px;
+    /* width: 350px; */
     height: 300px;
     background-image: linear-gradient(to top, var(--corPri), #4F37F5);
     color: white;
@@ -87,6 +100,10 @@ section#summary {
     border: solid black 1px;
 }
 
+section#summary > p {
+    text-align: center;
+}
+
 section#summary h2 {
     text-align: left;
     text-indent: 30px;
@@ -100,13 +117,14 @@ div#data {
     flex-flow: column;
     justify-content: flex-start;
     align-items: flex-start;
-    text-indent: 45px;
     border: 1px black solid;
 }
 
 #nms {
+    width: 100%;
+
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     gap: 50px;
 }
 
@@ -117,15 +135,13 @@ div#data {
     margin-top: -241px;
     margin-left: 100px;
 }
-section#nms > p#rec {
-    display: inline-block
+/*section#nms > p#rec {
+    display: inline-block;
     justify-content: space-around;
-}
+}*/
 
 
-div.attribution {
-   margin-top: 250px;
-}
+
 
 /* footer::after{
     content: ;
