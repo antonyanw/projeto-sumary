@@ -159,7 +159,7 @@ div#data {
 }
 
 #contRea {
-    background-color: #ff808617;
+    background-color: rgba(255, 128, 134, 0.09);
 }
 
 #rea {
@@ -167,15 +167,23 @@ div#data {
 }
 
 #contMem {
-    
+    background-color: rgba(247, 187, 75, 0.09);
 }
 
 #mem {
     color: var(--corMem);
 }
 
+#contVer {
+    background-color: rgb(107, 188, 173, 0.09);
+}
+
 #ver {
     color: var(--corVer);
+}
+
+#contVis {
+    background-color: rgb(56, 69, 163, 0.09);
 }
 
 #vis {
@@ -188,7 +196,13 @@ div#data {
     padding: 15px 0;
     border-radius: 40px;
     width: 291px;
-    margin: 10px auto;
+    margin: 20px auto;
+    font-weight: bolder;
+}
+
+footer > div{
+    display: flex;
+    flex-direction: column;
 }
 
 /*section#nms > p#rec {
