@@ -1,104 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Results summary component</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media-query.css">
 </head>
+
 <body>
   <main>
     <section id="blue">
-      <h1 id="yr">
-        Your Result
-      </h1>
-      <p id="circle">
-        <span id="bignumber">
-          76
-        </span>
-        <span id="one">of 100</span>
-      </p>
-      <h1 id="gt">
-        Great
-      </h1>
-      <p id="txt">
+      <h1> Your Result </h1>
+
+      <div id="circle">
+        <span> 76 </span>
+        <span>of 100</span>
+      </div>
+
+      <h2> Great </h2>
+      <p>
         You scored higher than 65% of the people who have taken these tests.
       </p>
     </section>
+
     <section id="summary">
-      <h2>
-        Summary
-      </h2>
-      <div id="data">
-        <section id="nms">
-          <p class="cont" id="contRea">
-            <span class="theme" id="rea">
-              <img src="./assets/images/icon-reaction.svg" alt="Reaction">
-              Reaction
-            </span>
-            <span class="prebarra">
-              80 
-              <span class="barra">
-                / 100
-              </span> 
-            </span>
+      <h2> Summary </h2>
+
+      <li>
+        <ui id="contRea">
+          <div id="rea">
+            <img src="./assets/images/icon-reaction.svg" alt="Reaction">
+            <p>Reaction</p>
+          </div>
+
+          <p class="points">
+            <span>80</span>
+            <span>/100</span>
           </p>
-          <p class="cont" id="contMem">
-            <span class="theme" id="mem">
+        </ui>
+
+        <ui id="contMem">
+          <div id="mem">
             <img src="./assets/images/icon-memory.svg" alt="Memory">
-            Memory
-          </span>
-          <span class="prebarra">
-            92 
-            <span class="barra">
-              / 100
-            </span>
-          </span>
+            <p>Memory</p>
+          </div>
+
+          <p class="points">
+            <span>92</span>
+            <span>/100</span>
           </p>
-          <p class="cont" id="contVer">
-            <span class="theme" id="ver">
-              <img src="./assets/images/icon-verbal.svg" alt="Verbal">
-              Verbal
-            </span>
-            <span class="prebarra">
-              61 
-              <span class="barra">
-              / 100
-              </span>
-          </span>
+        </ui>
+
+        <ui id="contVer">
+          <div id="ver">
+            <img src="./assets/images/icon-verbal.svg" alt="Verbal">
+            <p>Verbal</p>
+          </div>
+          <p class="points">
+            <span>61</span>
+            <span>/100</span>
           </p>
-          <p class="cont" id="contVis">
-            <span class="theme" id="vis">
-              <img src="./assets/images/icon-visual.svg" alt="Visual">
-              Visual
-            </span>
-            <span class="prebarra">
-              72 
-              <span class="barra">
-                / 100
-              </span>
-            </span>
+        </ui>
+
+        <ui id="contVis">
+          <div id="vis">
+            <img src="./assets/images/icon-visual.svg" alt="Visual">
+            <p>Visual</p>
+          </div>
+
+          <p class="points">
+            <span>72</span>
+            <span>/100</span>
           </p>
-        </section>
-      </div>
-      <p id="nue">
+        </ui>
+      </li>
+
+      <button>
         Continue
-      </p>
+      </button>
     </section>
   </main>
-  <!-- <footer>
-    <div class="attribution">
+
+  <footer>
+    <p>
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
         Frontend Mentor
-      </a>.
+      </a>
+      .
+    </p>
+    <p>
       Coded by
       <a href="#">
         Antony Eduardo
       </a>.
-    </div>
-  </footer> -->
+    </p>
+  </footer>
 </body>
+
 </html>

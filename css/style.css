@@ -15,6 +15,7 @@
     --corVer:#6BBCAD;
     --corVis:#3945A4;
     --corCon:#303B59;
+    --gray: rgba(255, 255, 255, 0.623);
 }
 
 /* <style>
@@ -29,190 +30,141 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: inherit
+}
 
-body {
+
+main {
+    width: 350px;
+    margin: 0 auto;
+}
+
+section#blue {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-main {
-    width: 350px;
-}
-
-
-
-#blue {
-    text-align: center;
-    margin: auto;
-    /* width: 350px; */
-    height: 300px;
+    padding: 50px;
+    padding-top: 10px;
+    gap: 15px;
+    
     background-image: linear-gradient(to top, var(--corPri), #4F37F5);
     color: white;
     border-radius: 0px 0px 30px 30px;
 }
 
-section#blue > h1#yr {
-    color: rgba(255, 255, 255, 0.623);
-    font: bolder 1em 'Hanken', Arial, Helvetica;
-    padding: 20px 0;
-    margin-top: 3em;
+section#blue > h1 {
+    font-size: 1em;
+    font-weight: bolder;
+    color: var(--gray);
 }
 
-section#blue > p > span#one {
-    color: rgba(255, 255, 255, 0.350);
+div#circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, var(--corCir2), var(--corCir1));
+    width: 117px;
+    height: 117px;
+    border-radius: 50%;
 }
 
-section#blue > p > span#bignumber {
-    display: block;
+#circle > span:nth-child(1) {
     font-size: 50px;
     font-weight: bolder;
 }
 
-p#circle {
-    border: none;
-    background-image: linear-gradient(to bottom, var(--corCir2), var(--corCir1));
-    width: 117px;
-    margin: auto;
-    padding: 15px;
-    border-radius: 50%;
+#circle > span:nth-child(2) {
+    color: rgba(255, 255, 255, 0.350);
 }
 
-#gt {
-    padding: 10px 0px 3px 0px;
+section#blue > p {
+    color: var(--gray);
+    font-size: clamp(14px, 1rem, 18px);
 }
 
-#txt {
-    color: rgba(255, 255, 255, 0.623);
-    display: block;
-    width: 260px;
-    margin: 3px auto 10px;
-    font-size: 14px;
+/* ------------------ S U M M A R Y ----------------------- */
+section#summary {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    gap: 20px;
 }
 
-
-section#summary > p {
-    text-align: center;
-}
-
-section#summary h2 {
-    text-align: left;
-    text-indent: 30px;
-    padding: 20px 0;
-    font: bolder 1em 'Hanken', Arial, Helvetica;
+section#summary > h2 {
+    font-weight: bolder;
+    font-size: 1em;
     color: #303B59;
 }
 
-div#data {
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-#nms {
-    width: 100%;
+#summary > li {
     display: flex;
     flex-direction: column;
     gap: 18px;
 }
-/* 
-#tsnd {
-    display: flex;
-    flex-flow: column;
-    gap: 50px;
-    margin-top: -241px;
-    margin-left: 100px;
-} */
 
-.cont {
-    width: 100%;
+#summary > li > ui {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
-    font-size: .9em;
-    font-weight: bolder;
-    border-radius: 10px;
-    width: 291px;
-    margin: auto;
+    
     padding: 15px 0;
+    border-radius: 10px;
+    font-size: 0.9em;
+    font-weight: bolder;
 }
 
-
-.theme {
+ui > div:nth-child(1) {
     display: flex;
-    text-indent: 15px;
-    text-align: left;
+    gap: 7px;  
 }
 
-.prebarra {
-    display: flex;
+p.points > span:nth-child(1) {
     color: #303B59;
-    column-gap: 4px;
-    text-align: right;
 }
 
-.barra {
+p.points > span:nth-child(2) {
     color: rgba(153, 142, 142, 0.623);
 }
 
 #contRea {
     background-color: rgba(255, 128, 134, 0.09);
-}
-
-#rea {
     color: var(--corRec);
 }
 
 #contMem {
     background-color: rgba(247, 187, 75, 0.09);
-}
-
-#mem {
     color: var(--corMem);
 }
 
 #contVer {
     background-color: rgb(107, 188, 173, 0.09);
-}
-
-#ver {
     color: var(--corVer);
 }
 
 #contVis {
     background-color: rgb(56, 69, 163, 0.09);
-}
-
-#vis {
     color: var(--corVis);
 }
 
-#nue {
+#summary > button {
     background-color: #303B59;
     color: white;
     padding: 15px 0;
     border-radius: 40px;
-    width: 291px;
-    margin: 20px auto;
+    border: none;
     font-weight: bolder;
 }
 
-footer > div{
+footer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/*section#nms > p#rec {
-    display: inline-block;
-    justify-content: space-around;
-}*/
-
-
-
-
-/* footer::after{
-    content: ;
-} */
+footer  a {
+    text-decoration-line: underline;
+}
