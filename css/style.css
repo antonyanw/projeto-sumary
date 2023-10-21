@@ -35,6 +35,11 @@ a {
     color: inherit
 }
 
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
 
 main {
     width: 350px;
@@ -106,7 +111,7 @@ section#summary > h2 {
     gap: 18px;
 }
 
-#summary > li > ui {
+#summary > li > ul {
     display: flex;
     justify-content: space-around;
     
@@ -116,7 +121,7 @@ section#summary > h2 {
     font-weight: bolder;
 }
 
-ui > div:nth-child(1) {
+ul > div:nth-child(1) {
     display: flex;
     gap: 7px;  
 }
