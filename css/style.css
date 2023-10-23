@@ -15,7 +15,7 @@
     --corVer:#6BBCAD;
     --corVis:#3945A4;
     --corCon:#303B59;
-    --gray: rgba(255, 255, 255, 0.623);
+    --gray: #ffffff9f;
 }
 
 /* <style>
@@ -32,7 +32,8 @@
 
 a {
     text-decoration: none;
-    color: inherit
+    color: inherit;
+    /* inherit É O ESTILO HERDADO DA TAG PAI */
 }
 
 ul {
